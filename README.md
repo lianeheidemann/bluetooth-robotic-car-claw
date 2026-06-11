@@ -1,4 +1,5 @@
 # Carrinho Robótico com Garra Controlado via Bluetooth
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 
 Projeto desenvolvido utilizando Arduino para controlar um carrinho robótico com garra mecânica via Bluetooth.
 
