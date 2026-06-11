@@ -1,4 +1,4 @@
-# 🤖 Carrinho Robótico com Garra Controlado via Bluetooth
+# Carrinho Robótico com Garra Controlado via Bluetooth
 
 Projeto desenvolvido utilizando Arduino para controlar um carrinho robótico com garra mecânica via Bluetooth.
 
@@ -6,13 +6,13 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 📸 Demonstração
+# Demonstração
 
 <img width="1439" height="712" alt="1000312917" src="https://github.com/user-attachments/assets/392343c4-f40d-4300-91d6-e44038d350f8" />
 
 ---
 
-# 🚀 Funcionalidades
+# Funcionalidades
 
 - Movimento para frente
 - Movimento para trás
@@ -25,7 +25,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 🛠 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 - Arduino C/C++
 - Arduino IDE
@@ -34,7 +34,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 🔌 Componentes Utilizados
+# Componentes Utilizados
 
 - Arduino Uno/Mega
 - Kit braço robótico em acrílico
@@ -47,7 +47,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 🎮 Controles Bluetooth
+# Controles Bluetooth
 
 | Comando | Função |
 |---|---|
@@ -61,7 +61,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# ⚙️ Como Executar
+# Como Executar
 
 1. Instale a Arduino IDE
 2. Conecte o Arduino ao computador
@@ -72,10 +72,10 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 ---
 
-# 👩🏻‍💻 Desenvolvedora: Liane Heidemann 
+<img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
+
+# Desenvolvedora: 
+Liane Heidemann 
 
 
-<p align="center">
-  <img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
-</p>
 
