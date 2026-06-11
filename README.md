@@ -9,7 +9,7 @@ O sistema permite movimentar o carrinho em diferentes direções e controlar a g
 
 # Demonstração
 
-<img width="1439" height="712" alt="1000312917" src="https://github.com/user-attachments/assets/392343c4-f40d-4300-91d6-e44038d350f8" />
+<img width="80%" src="https://github.com/user-attachments/assets/392343c4-f40d-4300-91d6-e44038d350f8" />
 
 ---
 
