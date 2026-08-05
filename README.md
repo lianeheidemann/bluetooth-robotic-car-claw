@@ -1,82 +1,77 @@
-# Carrinho Robótico com Garra Controlado via Bluetooth
+# Bluetooth-Controlled Robotic Car with Mechanical Claw
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 
-Projeto desenvolvido utilizando Arduino para controlar um carrinho robótico com garra mecânica via Bluetooth.
+An Arduino project that controls a robotic car with a mechanical claw over Bluetooth.
 
-O sistema permite movimentar o carrinho em diferentes direções e controlar a garra utilizando um aplicativo que simula um joystick no celular.
+The system moves the car in multiple directions and operates the claw through a mobile app that simulates a joystick.
 
 ---
 
-# Demonstração
+## Demonstration
 
 <img width="80%" src="https://github.com/user-attachments/assets/392343c4-f40d-4300-91d6-e44038d350f8" />
 
 ---
 
-# Funcionalidades
+## Features
 
-- Movimento para frente
-- Movimento para trás
-- Virar para esquerda
-- Virar para direita
-- Parar o carrinho
-- Abrir garra robótica
-- Fechar garra robótica
-- Controle remoto via Bluetooth
+- Move forward and backward
+- Turn left and right
+- Stop the car
+- Open and close the robotic claw
+- Remote control over Bluetooth
 
 ---
 
-# Tecnologias Utilizadas
+## Technologies
 
 - Arduino C/C++
 - Arduino IDE
-- Biblioteca Servo.h
-- Bluetooth HC-05 / HC-06
+- Servo.h library
+- HC-05 / HC-06 Bluetooth module
 
 ---
 
-# Componentes Utilizados
+## Components
 
-- Arduino Uno/Mega
-- Kit braço robótico em acrílico
-- Ponte H L298N ou L293D
-- Motores Servo
-- Módulo Bluetooth HC-05
-- Motores DC
-- Chassi robótico
-- Fonte/Bateria
+- Arduino Uno or Mega
+- Acrylic robotic arm kit
+- L298N or L293D H-bridge
+- Servo motors
+- HC-05 Bluetooth module
+- DC motors
+- Robotic chassis
+- Power supply or battery
 
 ---
 
-# Controles Bluetooth
+## Bluetooth Controls
 
-| Comando | Função |
+| Command | Action |
 |---|---|
-| G | Frente |
-| F | Ré |
-| R | Esquerda |
-| L | Direita |
-| S | Parar |
-| 8 | Fechar garra |
-| 7 | Abrir garra |
+| G | Move forward |
+| F | Reverse |
+| R | Turn left |
+| L | Turn right |
+| S | Stop |
+| 8 | Close claw |
+| 7 | Open claw |
 
 ---
 
-# Como Executar
+## How to Run
 
-1. Instale a Arduino IDE
-2. Conecte o Arduino ao computador
-3. Faça upload do código
-4. Conecte o módulo Bluetooth ao celular
-5. Utilize um aplicativo Bluetooth Joystick
-6. Controle o carrinho remotamente
+1. Install the Arduino IDE.
+2. Connect the Arduino board to your computer.
+3. Upload the source code.
+4. Pair the Bluetooth module with your phone.
+5. Open a Bluetooth joystick application.
+6. Control the car remotely.
 
 ---
 
 <img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
 
-# Desenvolvedora: 
-Liane Heidemann 
+## Developer
 
-
-
+Liane Heidemann
