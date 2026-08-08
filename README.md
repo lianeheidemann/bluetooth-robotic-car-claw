@@ -17,6 +17,7 @@ Projeto em Arduino que combina um **carrinho robótico** com uma **garra mecâni
 - [Componentes utilizados](#-componentes-utilizados)
 - [Esquema de ligação (pinout)](#-esquema-de-ligação-pinout)
 - [Comandos Bluetooth](#-comandos-bluetooth)
+- [Aplicativo de controle (interface mobile)](#-aplicativo-de-controle-interface-mobile)
 - [Como executar o projeto](#-como-executar-o-projeto)
 - [Estrutura do projeto](#-estrutura-do-projeto)
 - [Licença](#-licença)
@@ -105,6 +106,16 @@ Envie os caracteres abaixo através de um aplicativo de joystick Bluetooth para 
 
 ---
 
+## 📱 Aplicativo de controle (interface mobile)
+
+A interface usada para enviar os comandos é o app **[HC-05 Bluetooth Arduino Control](https://play.google.com/store/apps/details?id=com.giristudio.hc05.bluetooth.arduino.control)**, desenvolvido pela **Giristudio** e disponível gratuitamente na Google Play Store. O app não faz parte deste repositório — ele foi usado apenas como controle remoto (simulador de joystick), enquanto toda a lógica de resposta aos comandos foi desenvolvida neste projeto.
+
+Cada botão do joystick virtual envia um caractere via Bluetooth (protocolo serial simples), que é capturado pelo Arduino e interpretado no `loop()` do código para acionar os motores do carrinho ou os servomotores da garra, conforme a [tabela de comandos](#-comandos-bluetooth) acima.
+
+<img width="300" src="assets/joystick-mobile-simulator.jpg" alt="Interface do app HC-05 Bluetooth Arduino Control simulando um joystick" />
+
+---
+
 ## 🚀 Como executar o projeto
 
 1. Instale a [Arduino IDE](https://www.arduino.cc/en/software).
@@ -114,9 +125,9 @@ Envie os caracteres abaixo através de um aplicativo de joystick Bluetooth para 
 5. Selecione a placa e a porta correta em **Ferramentas**.
 6. Faça o upload do código para o Arduino.
 7. Monte o circuito conforme o [esquema de ligação](#-esquema-de-ligação-pinout).
-8. Pareie o módulo Bluetooth com o seu celular.
-9. Abra um aplicativo de joystick Bluetooth (ex: *Arduino Bluetooth Joystick*, *Bluetooth RC Controller*).
-10. Configure os botões do app para enviar os caracteres da tabela de comandos.
+8. Pareie o módulo Bluetooth (HC-05/HC-06) com o seu celular.
+9. Instale o app [HC-05 Bluetooth Arduino Control](https://play.google.com/store/apps/details?id=com.giristudio.hc05.bluetooth.arduino.control) (ou outro app de joystick Bluetooth equivalente).
+10. Conecte o app ao módulo HC-05 e use os botões do joystick para enviar os caracteres da tabela de comandos.
 11. Controle o carrinho e a garra remotamente! 🎮
 
 ---
