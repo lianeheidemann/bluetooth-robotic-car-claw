@@ -1,4 +1,4 @@
-# 🤖 Carrinho Robótico com Garra Mecânica via Bluetooth
+# Carrinho Robótico com Garra Mecânica via Bluetooth
 
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Bluetooth](https://img.shields.io/badge/Bluetooth-0082FC?style=for-the-badge&logo=bluetooth&logoColor=white)
