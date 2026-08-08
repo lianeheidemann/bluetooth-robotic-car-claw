@@ -69,7 +69,8 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 | HC-05/HC-06 Bluetooth module | Wireless communication with the phone |
 | DC motors | Car traction |
 | Robotic chassis | Car structure |
-| Power supply / battery | Powers the circuit |
+| 4x AA battery pack | Powers the Arduino board (~5-6V) |
+| USB phone power bank | Powers the DC motors through the H-bridge |
 
 ---
 
@@ -86,6 +87,8 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 | RX/TX | Bluetooth module | Serial communication (9600 baud) |
 
 > ⚠️ Pins 4, 5, 6, and 7 belong to a **single** H-bridge (IN1–IN4), responsible only for moving the car. The claw and the arm are controlled directly by the servo motors, with no H-bridge involved. Check your module's pinout (L298N/L293D) and adjust the wiring according to the model you're using.
+
+> ⚠️ If the Arduino and the DC motors are powered by separate sources (e.g. an AA battery pack for the Arduino and a power bank for the motors), connect their **grounds (GND) together**. Without a common ground, the H-bridge won't receive a valid signal from the Arduino pins.
 
 ---
 
