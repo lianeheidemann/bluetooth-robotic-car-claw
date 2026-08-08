@@ -1,157 +1,157 @@
-# Carrinho Robótico com Garra Mecânica via Bluetooth
+# Bluetooth Robotic Car with Mechanical Claw
 
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 ![Bluetooth](https://img.shields.io/badge/Bluetooth-0082FC?style=for-the-badge&logo=bluetooth&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-Projeto em Arduino que combina um **carrinho robótico** com uma **garra mecânica**, controlados remotamente via **Bluetooth** através de um aplicativo de celular com interface de joystick.
+Arduino project that combines a **robotic car** with a **mechanical claw**, controlled remotely via **Bluetooth** through a mobile app with a joystick interface.
 
 ---
 
-## 📑 Sumário
+## 📑 Table of Contents
 
-- [Demonstração](#-demonstração)
-- [Funcionalidades](#-funcionalidades)
-- [Como funciona](#-como-funciona)
-- [Tecnologias](#-tecnologias)
-- [Componentes utilizados](#-componentes-utilizados)
-- [Esquema de ligação (pinout)](#-esquema-de-ligação-pinout)
-- [Comandos Bluetooth](#-comandos-bluetooth)
-- [Aplicativo de controle (interface mobile)](#-aplicativo-de-controle-interface-mobile)
-- [Como executar o projeto](#-como-executar-o-projeto)
-- [Estrutura do projeto](#-estrutura-do-projeto)
-- [Licença](#-licença)
+- [Demo](#-demo)
+- [Features](#-features)
+- [How It Works](#-how-it-works)
+- [Technologies](#-technologies)
+- [Components Used](#-components-used)
+- [Wiring Diagram (Pinout)](#-wiring-diagram-pinout)
+- [Bluetooth Commands](#-bluetooth-commands)
+- [Control App (Mobile Interface)](#-control-app-mobile-interface)
+- [How to Run the Project](#-how-to-run-the-project)
+- [Project Structure](#-project-structure)
+- [License](#-license)
 
 ---
 
-## 🎥 Demonstração
+## 🎥 Demo
 
 <img width="80%" src="https://github.com/user-attachments/assets/392343c4-f40d-4300-91d6-e44038d350f8" />
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
-- 🚗 Mover para frente e para trás
-- ↩️ Virar à esquerda e à direita
-- ⏹️ Parar o carrinho
-- 🦾 Abrir e fechar a garra robótica
-- 📶 Controle remoto via Bluetooth em tempo real
-
----
-
-## ⚙️ Como funciona
-
-O Arduino recebe caracteres via comunicação serial (enviados pelo módulo Bluetooth HC-05/HC-06) e, de acordo com o caractere recebido, aciona **uma única ponte H** (usando os 4 pinos de entrada IN1–IN4) para movimentar os motores DC do carrinho, ou controla diretamente os servomotores responsáveis pela garra e pelo braço — sem nenhuma ponte H envolvida nesse caso.
-
-O controle da garra é feito apenas por ângulos de servo pré-definidos no código: os movimentos são suavizados incrementando o ângulo gradualmente (com pequenos delays) até o ângulo alvo salvo, em vez de saltar diretamente para a posição final.
+- 🚗 Move forward and backward
+- ↩️ Turn left and right
+- ⏹️ Stop the car
+- 🦾 Open and close the robotic claw
+- 📶 Real-time remote control via Bluetooth
 
 ---
 
-## 🛠️ Tecnologias
+## ⚙️ How It Works
+
+The Arduino receives characters over serial communication (sent by the HC-05/HC-06 Bluetooth module) and, depending on the character received, drives **a single H-bridge** (using the 4 input pins IN1–IN4) to move the car's DC motors, or directly controls the servo motors responsible for the claw and the arm — with no H-bridge involved in that case.
+
+The claw is controlled using pre-defined servo angles in the code: movements are smoothed by gradually incrementing the angle (with small delays) toward the saved target angle, instead of jumping straight to the final position.
+
+---
+
+## 🛠️ Technologies
 
 - Arduino C/C++
 - Arduino IDE
-- Biblioteca `Servo.h`
-- Módulo Bluetooth HC-05 / HC-06
-- Comunicação serial
+- `Servo.h` library
+- HC-05 / HC-06 Bluetooth module
+- Serial communication
 
 ---
 
-## 🧩 Componentes utilizados
+## 🧩 Components Used
 
-| Componente | Função |
+| Component | Function |
 |---|---|
-| Arduino Uno ou Mega | Controlador principal |
-| Kit de braço robótico acrílico | Estrutura da garra |
-| Ponte H (1x) L298N ou L293D | Controle dos motores DC do carrinho |
-| 2x Servo motores | Movimentação da garra e do braço |
-| Módulo Bluetooth HC-05/HC-06 | Comunicação sem fio com o celular |
-| Motores DC | Tração do carrinho |
-| Chassi robótico | Estrutura do carrinho |
-| Fonte de alimentação / bateria | Alimentação do circuito |
+| Arduino Uno or Mega | Main controller |
+| Acrylic robotic arm kit | Claw structure |
+| H-bridge (1x) L298N or L293D | Controls the car's DC motors |
+| 2x Servo motors | Moves the claw and the arm |
+| HC-05/HC-06 Bluetooth module | Wireless communication with the phone |
+| DC motors | Car traction |
+| Robotic chassis | Car structure |
+| Power supply / battery | Powers the circuit |
 
 ---
 
-## 🔌 Esquema de ligação (pinout)
+## 🔌 Wiring Diagram (Pinout)
 
-| Pino Arduino | Conectado a | Descrição |
+| Arduino Pin | Connected to | Description |
 |---|---|---|
-| 4 | Ponte H — IN1 | Motor esquerdo — sentido de giro |
-| 5 | Ponte H — IN2 | Motor esquerdo — sentido de giro |
-| 6 | Ponte H — IN3 | Motor direito — sentido de giro |
-| 7 | Ponte H — IN4 | Motor direito — sentido de giro |
-| 8 | Servo 2 (Braço) | Sinal PWM direto do servo do braço |
-| 9 | Servo 1 (Garra) | Sinal PWM direto do servo da garra |
-| RX/TX | Módulo Bluetooth | Comunicação serial (9600 baud) |
+| 4 | H-bridge — IN1 | Left motor — rotation direction |
+| 5 | H-bridge — IN2 | Left motor — rotation direction |
+| 6 | H-bridge — IN3 | Right motor — rotation direction |
+| 7 | H-bridge — IN4 | Right motor — rotation direction |
+| 8 | Servo 2 (Arm) | Direct PWM signal for the arm servo |
+| 9 | Servo 1 (Claw) | Direct PWM signal for the claw servo |
+| RX/TX | Bluetooth module | Serial communication (9600 baud) |
 
-> ⚠️ Os pinos 4, 5, 6 e 7 pertencem a **uma única** ponte H (IN1–IN4), responsável apenas pela movimentação do carrinho. A garra e o braço são controlados diretamente pelos servomotores, sem ponte H. Verifique a pinagem do seu módulo (L298N/L293D) e ajuste as ligações de acordo com o modelo utilizado.
+> ⚠️ Pins 4, 5, 6, and 7 belong to a **single** H-bridge (IN1–IN4), responsible only for moving the car. The claw and the arm are controlled directly by the servo motors, with no H-bridge involved. Check your module's pinout (L298N/L293D) and adjust the wiring according to the model you're using.
 
 ---
 
-## 📡 Comandos Bluetooth
+## 📡 Bluetooth Commands
 
-Envie os caracteres abaixo através de um aplicativo de joystick Bluetooth para controlar o carrinho:
+Send the characters below through a Bluetooth joystick app to control the car:
 
-| Comando | Ação |
+| Command | Action |
 |---|---|
-| `G` | Mover para frente |
-| `F` | Mover para trás |
-| `R` | Virar à esquerda |
-| `L` | Virar à direita |
-| `S` | Parar |
-| `8` | Fechar a garra |
-| `7` | Abrir a garra |
+| `G` | Move forward |
+| `F` | Move backward |
+| `R` | Turn left |
+| `L` | Turn right |
+| `S` | Stop |
+| `8` | Close the claw |
+| `7` | Open the claw |
 
 ---
 
-## 📱 Aplicativo de controle (interface mobile)
+## 📱 Control App (Mobile Interface)
 
-A interface usada para enviar os comandos é o app **[HC-05 Bluetooth Arduino Control](https://play.google.com/store/apps/details?id=com.giristudio.hc05.bluetooth.arduino.control)**, desenvolvido pela **Giristudio** e disponível gratuitamente na Google Play Store. O app não faz parte deste repositório — ele foi usado apenas como controle remoto (simulador de joystick), enquanto toda a lógica de resposta aos comandos foi desenvolvida neste projeto.
+The interface used to send commands is the **[HC-05 Bluetooth Arduino Control](https://play.google.com/store/apps/details?id=com.giristudio.hc05.bluetooth.arduino.control)** app, developed by **Giristudio** and available for free on the Google Play Store. The app is not part of this repository — it was used only as a remote control (joystick simulator), while all the logic for responding to commands was developed in this project.
 
-Cada botão do joystick virtual envia um caractere via Bluetooth (protocolo serial simples), que é capturado pelo Arduino e interpretado no `loop()` do código para acionar os motores do carrinho ou os servomotores da garra, conforme a [tabela de comandos](#-comandos-bluetooth) acima.
+Each button on the virtual joystick sends a character over Bluetooth (a simple serial protocol), which is captured by the Arduino and interpreted in the code's `loop()` to drive the car's motors or the claw's servo motors, according to the [commands table](#-bluetooth-commands) above.
 
-<img width="300" src="assets/joystick-mobile-simulator.jpg" alt="Interface do app HC-05 Bluetooth Arduino Control simulando um joystick" />
-
----
-
-## 🚀 Como executar o projeto
-
-1. Instale a [Arduino IDE](https://www.arduino.cc/en/software).
-2. Conecte a placa Arduino ao computador via USB.
-3. Abra o arquivo `bracoMecanicoComCarrinho.ino` na IDE.
-4. Instale/verifique a biblioteca `Servo.h` (geralmente já vem com a IDE).
-5. Selecione a placa e a porta correta em **Ferramentas**.
-6. Faça o upload do código para o Arduino.
-7. Monte o circuito conforme o [esquema de ligação](#-esquema-de-ligação-pinout).
-8. Pareie o módulo Bluetooth (HC-05/HC-06) com o seu celular.
-9. Instale o app [HC-05 Bluetooth Arduino Control](https://play.google.com/store/apps/details?id=com.giristudio.hc05.bluetooth.arduino.control) (ou outro app de joystick Bluetooth equivalente).
-10. Conecte o app ao módulo HC-05 e use os botões do joystick para enviar os caracteres da tabela de comandos.
-11. Controle o carrinho e a garra remotamente! 🎮
+<img width="300" src="assets/joystick-mobile-simulator.jpg" alt="HC-05 Bluetooth Arduino Control app interface simulating a joystick" />
 
 ---
 
-## 📁 Estrutura do projeto
+## 🚀 How to Run the Project
+
+1. Install the [Arduino IDE](https://www.arduino.cc/en/software).
+2. Connect the Arduino board to your computer via USB.
+3. Open the `bracoMecanicoComCarrinho.ino` file in the IDE.
+4. Install/verify the `Servo.h` library (usually included with the IDE).
+5. Select the correct board and port under **Tools**.
+6. Upload the code to the Arduino.
+7. Wire the circuit according to the [wiring diagram](#-wiring-diagram-pinout).
+8. Pair the Bluetooth module (HC-05/HC-06) with your phone.
+9. Install the [HC-05 Bluetooth Arduino Control](https://play.google.com/store/apps/details?id=com.giristudio.hc05.bluetooth.arduino.control) app (or another equivalent Bluetooth joystick app).
+10. Connect the app to the HC-05 module and use the joystick buttons to send the characters from the commands table.
+11. Control the car and the claw remotely! 🎮
+
+---
+
+## 📁 Project Structure
 
 ```
 bluetooth-robotic-car-claw/
 ├── assets/
 │   ├── archives/
-│   │   └── README.md              # Versão anterior do README (arquivada)
+│   │   └── README.md              # Previous version of the README (archived)
 │   └── joystick-mobile-simulator.jpg
-├── bracoMecanicoComCarrinho.ino   # Código-fonte principal (Arduino)
-├── LICENSE                        # Licença MIT
-└── README.md                      # Documentação do projeto
+├── bracoMecanicoComCarrinho.ino   # Main source code (Arduino)
+├── LICENSE                        # MIT License
+└── README.md                      # Project documentation
 ```
 
 ---
 
 <img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
 
-## 📄 Licença
+## 📄 License
 
-Este projeto está sob a licença [MIT](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Desenvolvido por <strong>Liane Heidemann</strong></p>
+<p align="center">Developed by <strong>Liane Heidemann</strong></p>
