@@ -136,8 +136,8 @@ Cada botão do joystick virtual envia um caractere via Bluetooth (protocolo seri
 
 ```
 bluetooth-robotic-car-claw/
-├── archive/
-│   └── README.md                  # Versão anterior do README (arquivada)
+├── assets/
+│   └── archive/                  # Versão anterior do README (arquivada)
 ├── bracoMecanicoComCarrinho.ino   # Código-fonte principal (Arduino)
 ├── LICENSE                        # Licença MIT
 └── README.md                      # Documentação do projeto
