@@ -112,7 +112,7 @@ A interface usada para enviar os comandos é o app **[HC-05 Bluetooth Arduino Co
 
 Cada botão do joystick virtual envia um caractere via Bluetooth (protocolo serial simples), que é capturado pelo Arduino e interpretado no `loop()` do código para acionar os motores do carrinho ou os servomotores da garra, conforme a [tabela de comandos](#-comandos-bluetooth) acima.
 
-<!-- Adicionar aqui um print do app conectado ao HC-05 -->
+<img width="300" src="assets/joystick-mobile-simulator.jpg" alt="Interface do app HC-05 Bluetooth Arduino Control simulando um joystick" />
 
 ---
 
