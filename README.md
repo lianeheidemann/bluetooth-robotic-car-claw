@@ -77,12 +77,12 @@ O controle da garra é feito apenas por ângulos de servo pré-definidos no cód
 
 | Pino Arduino | Conectado a | Descrição |
 |---|---|---|
-| 4 | Ponte H — IN1 | Único módulo de ponte H, usado apenas nos motores do carrinho |
-| 5 | Ponte H — IN2 | Único módulo de ponte H, usado apenas nos motores do carrinho |
-| 6 | Ponte H — IN3 | Único módulo de ponte H, usado apenas nos motores do carrinho |
-| 7 | Ponte H — IN4 | Único módulo de ponte H, usado apenas nos motores do carrinho |
-| 8 | Servo 2 (Braço) | Sinal PWM direto do servo do braço — sem ponte H |
-| 9 | Servo 1 (Garra) | Sinal PWM direto do servo da garra — sem ponte H |
+| 4 | Ponte H — IN1 | Motor esquerdo — sentido de giro |
+| 5 | Ponte H — IN2 | Motor esquerdo — sentido de giro |
+| 6 | Ponte H — IN3 | Motor direito — sentido de giro |
+| 7 | Ponte H — IN4 | Motor direito — sentido de giro |
+| 8 | Servo 2 (Braço) | Sinal PWM direto do servo do braço |
+| 9 | Servo 1 (Garra) | Sinal PWM direto do servo da garra |
 | RX/TX | Módulo Bluetooth | Comunicação serial (9600 baud) |
 
 > ⚠️ Os pinos 4, 5, 6 e 7 pertencem a **uma única** ponte H (IN1–IN4), responsável apenas pela movimentação do carrinho. A garra e o braço são controlados diretamente pelos servomotores, sem ponte H. Verifique a pinagem do seu módulo (L298N/L293D) e ajuste as ligações de acordo com o modelo utilizado.
