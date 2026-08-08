@@ -21,7 +21,6 @@ Projeto em Arduino que combina um **carrinho robótico** com uma **garra mecâni
 - [Como executar o projeto](#-como-executar-o-projeto)
 - [Estrutura do projeto](#-estrutura-do-projeto)
 - [Licença](#-licença)
-- [Autora](#-autora)
 
 ---
 
@@ -137,7 +136,9 @@ Cada botão do joystick virtual envia um caractere via Bluetooth (protocolo seri
 ```
 bluetooth-robotic-car-claw/
 ├── assets/
-│   └── archive/                  # Versão anterior do README (arquivada)
+│   ├── archives/
+│   │   └── README.md              # Versão anterior do README (arquivada)
+│   └── joystick-mobile-simulator.jpg
 ├── bracoMecanicoComCarrinho.ino   # Código-fonte principal (Arduino)
 ├── LICENSE                        # Licença MIT
 └── README.md                      # Documentação do projeto
@@ -153,4 +154,4 @@ Este projeto está sob a licença [MIT](LICENSE).
 
 ---
 
-<p align="center">Developed by <strong>Liane Heidemann</strong></p>
+<p align="center">Desenvolvido por <strong>Liane Heidemann</strong></p>
