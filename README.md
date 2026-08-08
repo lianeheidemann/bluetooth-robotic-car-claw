@@ -153,6 +153,4 @@ Este projeto está sob a licença [MIT](LICENSE).
 
 ---
 
-## 👩‍💻 Autora
-
-**Liane Heidemann**
+<p align="center">Developed by <strong>Liane Heidemann</strong></p>
