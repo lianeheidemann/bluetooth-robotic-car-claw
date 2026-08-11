@@ -26,7 +26,7 @@ Arduino project that combines a **robotic car** with a **mechanical claw**, cont
 
 ## 🖼️ Prototype
 
-<img width="40%" src="assets/prototype/image2.png" />
+<img width="70%" src="assets/prototype/image2.png" />
 
 ---
 
@@ -114,7 +114,7 @@ The interface used to send commands is the **[HC-05 Bluetooth Arduino Control](h
 
 Each button on the virtual joystick sends a character over Bluetooth (a simple serial protocol), which is captured by the Arduino and interpreted in the code's `loop()` to drive the car's motors or the claw's servo motors, according to the [commands table](#-bluetooth-commands) above.
 
-<img width="300" src="assets/joystick-mobile-simulator-2.jpg" alt="HC-05 Bluetooth Arduino Control app interface simulating a joystick" />
+<img width="40%" src="assets/joystick-mobile-simulator-2.jpg" alt="HC-05 Bluetooth Arduino Control app interface simulating a joystick" />
 
 ---
 
