@@ -149,8 +149,6 @@ bluetooth-robotic-car-claw/
 
 ---
 
-<img width="400" src="https://github.com/user-attachments/assets/e139d0a5-4c8f-4ca3-b029-00c2687fdce9" />
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
