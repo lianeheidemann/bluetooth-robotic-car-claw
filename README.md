@@ -32,11 +32,11 @@ Arduino project that combines a **robotic car** with a **mechanical claw**, cont
 
 ## ✨ Features
 
-- 🚗 Move forward and backward
-- ↩️ Turn left and right
-- ⏹️ Stop the car
-- 🦾 Open and close the robotic claw
-- 📶 Real-time remote control via Bluetooth
+- Move forward and backward
+- Turn left and right
+- Stop the car
+- Open and close the robotic claw
+- Real-time remote control via Bluetooth
 
 ---
 
@@ -118,7 +118,7 @@ Each button on the virtual joystick sends a character over Bluetooth (a simple s
 
 ---
 
-## 🚀 How to Run the Project
+## ▶️ How to Run the Project
 
 1. Install the [Arduino IDE](https://www.arduino.cc/en/software).
 2. Connect the Arduino board to your computer via USB.
