@@ -24,9 +24,9 @@ Arduino project that combines a **robotic car** with a **mechanical claw**, cont
 
 ---
 
-## 🎥 Demo
+## 🖼️ Prototype
 
-<img width="80%" src="https://github.com/user-attachments/assets/392343c4-f40d-4300-91d6-e44038d350f8" />
+<img width="80%" src="https://github.com/lianeheidemann/bluetooth-robotic-car-claw/assets/prototype/image.png" />
 
 ---
 
