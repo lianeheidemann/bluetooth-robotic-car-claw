@@ -26,7 +26,7 @@ Arduino project that combines a **robotic car** with a **mechanical claw**, cont
 
 ## 🖼️ Prototype
 
-<img width="60%" src="assets/prototype/image.png" />
+<img width="60%" src="assets/prototype/image2.png" />
 
 ---
 
