@@ -86,9 +86,7 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 | 9 | Servo 1 (Claw) | Direct PWM signal for the claw servo |
 | RX/TX | Bluetooth module | Serial communication (9600 baud) |
 
-> ⚠️ Pins 4, 5, 6, and 7 belong to a **single** H-bridge (IN1–IN4), responsible only for moving the car. The claw and the arm are controlled directly by the servo motors, with no H-bridge involved. Check your module's pinout (L298N/L293D) and adjust the wiring according to the model you're using.
-
-> ⚠️ If the Arduino and the DC motors are powered by separate sources (e.g. an AA battery pack for the Arduino and a power bank for the motors), connect their **grounds (GND) together**. Without a common ground, the H-bridge won't receive a valid signal from the Arduino pins.
+> para o melhor desempenho dos motores do carrinho, substitui a fonte de alimentação de pilha por uma bateria (tipo Power bank)
 
 ---
 
