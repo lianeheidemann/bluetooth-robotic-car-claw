@@ -86,7 +86,7 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 | 9 | Servo 1 (Claw) | Direct PWM signal for the claw servo |
 | RX/TX | Bluetooth module | Serial communication (9600 baud) |
 
-> para o melhor desempenho dos motores do carrinho, substitui a fonte de alimentação de pilha por uma bateria (tipo Power bank)
+> 💡 For improved motor performance, the disposable battery pack was replaced with a rechargeable power bank–type battery as the power source.
 
 ---
 
