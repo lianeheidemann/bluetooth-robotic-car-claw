@@ -8,7 +8,7 @@ Arduino project that combines a **robotic car** with a **mechanical claw**, cont
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Demo](#-demo)
 - [Features](#-features)
