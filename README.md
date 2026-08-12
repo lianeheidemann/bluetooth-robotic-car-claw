@@ -86,7 +86,7 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 | 9 | Servo 1 (Claw) | Direct PWM signal for the claw servo |
 | RX/TX | Bluetooth module | Serial communication (9600 baud) |
 
-> 💡 For improved motor performance, the disposable battery pack was replaced with a rechargeable power bank–type battery as the power source.
+> 💡 The 4x AA battery pack powers the Arduino board. The DC motors were originally powered by a 9V battery; for improved motor performance, it was later replaced with a rechargeable phone power bank.
 
 ---
 
