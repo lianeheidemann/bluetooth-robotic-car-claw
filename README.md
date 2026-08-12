@@ -24,13 +24,13 @@ Arduino project that combines a **robotic car** with a **mechanical claw**, cont
 
 ---
 
-## 🖼️ Prototype
+## Prototype
 
 <img width="70%" src="assets/prototype/image2.png" />
 
 ---
 
-## ✨ Features
+## Features
 
 - Move forward and backward
 - Turn left and right
@@ -40,7 +40,7 @@ Arduino project that combines a **robotic car** with a **mechanical claw**, cont
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 The Arduino receives characters over serial communication (sent by the HC-05/HC-06 Bluetooth module) and, depending on the character received, drives **a single H-bridge** (using the 4 input pins IN1–IN4) to move the car's DC motors, or directly controls the servo motors responsible for the claw and the arm — with no H-bridge involved in that case.
 
@@ -48,7 +48,7 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 
 ---
 
-## 🛠️ Technologies
+## Technologies
 
 - Arduino C/C++
 - Arduino IDE
@@ -58,7 +58,7 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 
 ---
 
-## 🧩 Components Used
+## Components Used
 
 | Component | Function |
 |---|---|
@@ -74,7 +74,7 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 
 ---
 
-## 🔌 Wiring Diagram (Pinout)
+## Wiring Diagram (Pinout)
 
 | Arduino Pin | Connected to | Description |
 |---|---|---|
@@ -92,7 +92,7 @@ The claw is controlled using pre-defined servo angles in the code: movements are
 
 ---
 
-## 📡 Bluetooth Commands
+## Bluetooth Commands
 
 Send the characters below through a Bluetooth joystick app to control the car:
 
@@ -108,7 +108,7 @@ Send the characters below through a Bluetooth joystick app to control the car:
 
 ---
 
-## 📱 Control App (Mobile Interface)
+## Control App (Mobile Interface)
 
 The interface used to send commands is the **[HC-05 Bluetooth Arduino Control](https://play.google.com/store/apps/details?id=com.giristudio.hc05.bluetooth.arduino.control)** app, developed by **Giristudio** and available for free on the Google Play Store. The app is not part of this repository — it was used only as a remote control (joystick simulator), while all the logic for responding to commands was developed in this project.
 
@@ -118,7 +118,7 @@ Each button on the virtual joystick sends a character over Bluetooth (a simple s
 
 ---
 
-## ▶️ How to Run the Project
+## How to Run the Project
 
 1. Install the [Arduino IDE](https://www.arduino.cc/en/software).
 2. Connect the Arduino board to your computer via USB.
@@ -134,7 +134,7 @@ Each button on the virtual joystick sends a character over Bluetooth (a simple s
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 bluetooth-robotic-car-claw/
@@ -149,7 +149,7 @@ bluetooth-robotic-car-claw/
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
